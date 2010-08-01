@@ -6,6 +6,10 @@ require 'rack/codehighlighter'
 
 use Rack::Codehighlighter, :coderay, :element => "pre", :pattern => /\A:::(\w+)\s*\n/
 
+before do
+  response.headers['Cache-Control'] = 'public, max-age=28800'
+end
+
 get '/' do
   @title = "Posts from a Rubyist from Denmark"
   @articles = Article.all
