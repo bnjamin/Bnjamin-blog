@@ -1,3 +1,3 @@
 require 'blog'
-run Sinatra::Applicationrequire
+run Sinatra::Application
 
