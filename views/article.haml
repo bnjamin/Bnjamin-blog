@@ -1,0 +1,12 @@
+.post
+  %h1= @article.title
+  %span.date= @article.date
+  .content= @article.body
+  .comments
+    -if nil
+      #disqus_thread
+        %script{:src => "http://disqus.com/forums/<%= @config[:disqus] %>/embed.js", :type => "text/javascript"}     %noscript
+        %a{:href => "http://<%= @config[:disqus] %>.disqus.com/?url=ref"} View the discussion thread.
+        %a.dsq-brlink{:href => "http://disqus.com"}
+        blog comments powered by
+        %span.logo-disqus Disqus

@@ -1,0 +1,40 @@
+<!doctype html>
+%html
+  %head
+    %link{:href => "/css/reset.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/css/text.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/css/coderay.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/css/main.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/index.xml", :rel => "alternate", :title => "<%= title %> - feed", :type => "application/atom+xml"}/
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title= @title + " - Benjamin Jørgensen"
+	  
+  %body
+    #header
+      .container
+        #logo
+          Benjamin J&oslash;rgensen
+          %span { :country => 'Denmark', :language => 'ruby' }
+        %ul#menu
+          %li
+            %a{:href => "/"} Blog
+          %li
+            %a{:href => "/projects"} Projects
+          %li
+            %a{:href => "/about"} About me
+    .container
+      = yield
+    :javascript
+      //
+      (function() {
+      	var links = document.getElementsByTagName('a');
+      	var query = '?';
+      	for(var i = 0; i < links.length; i++) {
+      	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+      		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+      	}
+      	}
+      	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/bnjamin/get_num_replies.js' + query + '"></' + 'script>');
+      })();
+      //
+      
