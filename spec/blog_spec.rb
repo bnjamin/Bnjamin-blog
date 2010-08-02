@@ -36,8 +36,8 @@ describe Article do
   end
   
   it "loads all the yaml files" do
-    Dir.new("spec/test_articles").each do |file|
-      puts file if file
-    end 
+    @articles = Article.all("spec/test_articles")
+    @articles.length.should == 2
+    @articles.first.path.should == "article/article1"  
   end
 end

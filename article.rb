@@ -9,8 +9,8 @@ class Article
     @path = 'article/' + File.basename(path, '.yaml')
   end
 
-  def self.all
-    Dir["articles/*.yaml"].collect { |file| Article.new(file) }
+  def self.all(path = "articles")
+    Dir["#{path}/*.yaml"].collect { |file| Article.new(file) }
   end
 
   private
