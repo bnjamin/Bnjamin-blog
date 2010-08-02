@@ -26,18 +26,17 @@ end
 describe Article do
   it "initializes with one argument" do
     lambda { Article.new(  ) }.should raise_error(ArgumentError)
-    lambda { Article.new( "spec/test_articles/article1.yaml" ) }.should_not raise_error 
+    lambda { Article.new( "spec/test_articles/article1.txt" ) }.should_not raise_error 
   end
   
   it "loads the yaml fields" do
-    @article = Article.new("spec/test_articles/article1.yaml")
+    @article = Article.new("spec/test_articles/article1.txt")
     @article.title.should == "Hello"
-    @article.content.should == "Hello World"
   end
   
   it "loads all the yaml files" do
     @articles = Article.all("spec/test_articles")
     @articles.length.should == 2
-    @articles.first.path.should == "article/article1"  
+    @articles.first.path.should == "article/article2"  
   end
 end

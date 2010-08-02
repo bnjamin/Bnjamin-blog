@@ -3,7 +3,8 @@
     %h1
       %a{:href => article.path}= article.title
     %span.date= article.date
-    .content= article.body
+    .content
+      =find_and_preserve article.body
     .more
       %a{:href => "article/#{article.path}#disqus_thread"} Comments
   .hr

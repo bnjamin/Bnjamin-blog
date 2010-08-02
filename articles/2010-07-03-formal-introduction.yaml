@@ -1,8 +1,0 @@
---- 
-title: Formal Introduction
-date: 03/07/2010
-
-body: "<pre>:::ruby \n 
-         puts \"hello world\" \n 
-      </pre>"
-

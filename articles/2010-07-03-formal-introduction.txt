@@ -1,0 +1,9 @@
+--- 
+title: Formal Introduction
+date: 03/07/2010
+
+<h2>Hello tada</h2>
+<pre> 
+  puts "hello world" 
+</pre>
+

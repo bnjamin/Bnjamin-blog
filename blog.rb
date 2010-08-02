@@ -17,8 +17,9 @@ get '/' do
 end
 
 get '/article/:path' do
-  @article = Article.new("articles/" + params[:path] + ".yaml")
+  @article = Article.new("articles/" + params[:path] + ".txt")
   @title = @article.title
+  puts @article.body 
   haml :article
 end
 

@@ -2,15 +2,16 @@ require 'yaml'
 
 class Article
   
-  attr_reader :path
+  attr_reader :path, :body
 
   def initialize(path)
-    @yaml = YAML.load(File.new(path))
-    @path = 'article/' + File.basename(path, '.yaml')
+    meta, @body = File.read(path).split(/\n\n/, 2)
+    @yaml = YAML.load(meta)
+    @path = 'article/' + File.basename(path, '.txt')
   end
 
   def self.all(path = "articles")
-    Dir["#{path}/*.yaml"].collect { |file| Article.new(file) }
+    Dir["#{path}/*.txt"].reverse.collect { |file| Article.new(file) }
   end
 
   private
