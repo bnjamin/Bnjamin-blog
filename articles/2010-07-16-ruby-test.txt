@@ -1,7 +1,0 @@
---- 
-title: Ruby test
-date: 16/07/2010
-
-<pre>:::ruby
-  puts "hello world"
-</pre>

@@ -5,6 +5,12 @@
     %link{:href => "/css/text.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "/css/coderay.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "/css/main.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:type => "text/javascript", :src  => "http://www.google.com/jsapi"}
+    :javascript
+      google.load('jquery', '1.4.2);
+    %script{:src => "js/jquery.easing.1.3.js"}/
+    %script{:src => "js/jquery.cycle.all.js"}/
+    %script{:src => "js/portfolio.js"}/
     %link{:href => "/index.xml", :rel => "alternate", :title => "<%= title %> - feed", :type => "application/atom+xml"}/
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title= @title + " - Benjamin Jørgensen"

@@ -1,8 +1,0 @@
---- 
-title: Hello Ruby!
-date: 02/08/2010
-
-<pre>:::ruby
-#Im a comment
-puts "hello world"
-</pre>
