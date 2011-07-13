@@ -11,7 +11,7 @@ before do
 end
 
 get '/' do
-  @title = "Geek who loves programming in ruby and the interwebs"
+  @title = "Rails Freelancer med fokus på forretningsværdi"
   haml :about
 end
 
