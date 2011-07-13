@@ -12,7 +12,7 @@ namespace :article do
     article << "Here goes your content\n\n"
 
 
-    path = "articles/#{Time.now.strftime("%Y-%m-%d")}-#{title.split(" ").join("-")}.yaml"
+    path = "articles/#{Time.now.strftime("%Y-%m-%d")}-#{title.split(" ").join("-")}.txt"
 
     unless File.exist? path
       File.open(path, "w") do |file|

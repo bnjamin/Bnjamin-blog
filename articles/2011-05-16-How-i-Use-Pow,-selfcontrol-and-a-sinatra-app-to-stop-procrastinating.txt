@@ -1,0 +1,6 @@
+--- 
+title: How i Use Pow, selfcontrol and a sinatra app to stop procrastinating
+date: 16/05/2011
+
+Here goes your content
+
