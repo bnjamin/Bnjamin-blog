@@ -1,0 +1,13 @@
+.grid_12
+  %h2= project.title
+.grid_6
+  %p= project.comment
+  .techs_header Technologies used:
+  %ul.techs
+    - project.techs.each do |tech|
+      %li= tech
+  %a{:href=>project.url} You can visit the site here
+.grid_6
+  %img.big{:src=>project.image}
+.clear
+%hr

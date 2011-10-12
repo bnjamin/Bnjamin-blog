@@ -1,0 +1,117 @@
+body
+  :background url("/images/bg.png")
+  :padding 50px 0 10px
+  :font 16px "Lucida Grande", Helvetica, Arial, sans-serif
+  :color #333
+a
+  :color #ff5544
+  :text-decoration none
+  &:hover
+    :color #881111
+
+hr 
+  :width 90%
+  :margin 25px auto
+  :clear both
+  :border solid
+  :border-width 0px
+  :border-top 1px #fefefe solid
+  :border-bottom 1px #eee solid
+  :height 0
+
+img
+  :background #ddd
+  :box-shadow 0 0 7px #888
+
+img.big
+  :width 450px
+
+.image_source
+  :color #aaa
+  :font-size 11px
+  :margin-top 3px
+
+::-moz-selection
+  :background #dd4444
+  :color white
+  :text-shadow none
+
+::selection
+  :background #dd4444
+  :color white
+  :text-shadow none
+
+#top
+  :position relative
+
+#content
+  :padding-top 20px
+  :padding-bottom 20px
+  :background #fff
+  :border #ccc 1px solid
+  :border-radius 3px
+  :box-shadow 0 0 5px #aaa
+
+ul#menu
+  li
+    :display block
+    :float right
+    :font-size 20px
+    .extra_info
+      :position absolute
+      :top -40px
+      :right 0px
+      :display none
+      :border 1px #ccc solid
+      :background #fff
+      :padding 5px
+      :border-radius 3px
+      :color #999
+      :font-size 13px
+    &:hover
+      .extra_info
+        :display block
+
+#footer 
+  :margin-top 5px
+  :text-align center
+  :font-size 12px
+  :color #888
+
+.techs_header
+  :font-weight bold
+
+ul.techs
+  :margin-top 10px
+
+input, textarea
+  :border-radius 3px
+  :font-size 16px
+  :padding 3px
+  :margin-bottom 10px
+  :background -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#fefefe))
+  :width 400px
+
+.awesome
+  :background-color #ddd
+  :color #333
+  :background -moz-linear-gradient(0% 100% 90deg, #eee, #bbb)
+  :background -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#bbb))
+  :display inline-block
+  :padding 5px 10px 6px 10px
+  :margin 5px 10px 5px 0
+  :text-decoration none
+  :font-size 16px
+  :font-weight bold
+  :line-height 1
+  :-moz-border-radius 10px
+  :-webkit-border-radius 10px
+  :cursor pointer
+  :border 1px solid #aaa
+  :width 410px
+
+.awesome:hover
+  :background-color #ccc
+  :border 1px solid #999
+  :background -moz-linear-gradient(0% 100% 90deg, #fff, #ccc)
+  :background -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc))

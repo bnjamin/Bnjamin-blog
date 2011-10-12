@@ -1,12 +1,29 @@
-<!doctype html>
+!!!
 %html
   %head
-    %link{:href => "/css/reset.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/css/text.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/css/main.css", :rel => "stylesheet", :type => "text/css"}/
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title= @title + " - Benjamin Jørgensen"
-	  
+    %title=  @title + " - Benjamin Jørgensen"
+    %link{:rel=>'stylesheet', :href=>'/stylesheets/reset.css'}
+    %link{:rel=>'stylesheet', :href=>'/stylesheets/960_12_col.css'}
+    %link{:rel=>'stylesheet', :href=>'/stylesheets/text.css'}
+    %link{:rel=>'stylesheet', :href=>'/stylesheets/style.css'}
   %body
-    .container
-      = yield
+    .container_12#top
+      #logo.grid_6 
+        %a{:href=>'/'} Benjamin Jørgensen
+      %ul.grid_6#menu
+        %li
+          .extra_info Go ahead, I don't bite :}
+          %a{:href=>'contact'} Contact me
+        %li
+          .extra_info Personal info
+          %a{:href=>'/about'} About
+        %li
+          .extra_info See some of my projects
+          %a{:href=>'/projects'} Projects
+        %li
+          .extra_info Read my musings
+          %a{:href=>'/'} Blog
+
+    .container_12#content= yield
+    .container_12
+      .grid_12#footer &copy; 2011 Benjamin Jørgensen

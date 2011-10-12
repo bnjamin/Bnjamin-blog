@@ -1,0 +1,11 @@
+--- 
+title: flightlogger.net
+image: "/images/flightlogger.png"
+techs:
+  - "Rails 3.0"
+  - "Heroku" 
+  - "Amazon S3"
+url: "http://flightlogger.net"
+
+An intranet for aviation schools
+

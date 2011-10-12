@@ -1,0 +1,10 @@
+--- 
+title: jampartner.dk
+image: "/images/jampartner.png"
+techs:
+  - "Rails 2.3"
+  - "Heroku" 
+  - "Amazon S3"
+url: "http://jampartner.dk"
+
+A page for musicians in denmark
