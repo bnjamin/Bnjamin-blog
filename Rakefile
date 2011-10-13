@@ -7,7 +7,7 @@ namespace :article do
     title = STDIN.gets.chomp
 
     article = { 'title' => title,
-                'date' => Time.now.strftime("%d/%m/%Y")}.to_yaml
+                'date' => Time.now.strftime("%B %d, %Y")}
     article << "\n"
     article << "Here goes your content\n\n"
 

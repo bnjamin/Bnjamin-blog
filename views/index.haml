@@ -1,10 +1,16 @@
 -@articles.each do |article|
-  .grid_12.article
-    %h1.article
-      %a{:href => article.path}= article.title
-    %span.date= article.date
-    .content
-      = markdown article.body
+  .grid_8.suffix_4
+    %h1.article= article.title
+  .grid_8.article
+    .content= find_and_preserve(markdown(article.body))
     .more
       %a{:href => "/#{article.path}#disqus_thread"} Comments
+  .grid_4
+    %span.date
+      This article was puplished on
+      %br
+      =article.date
+    .more
+      %a{:href => "/#{article.path}#disqus_thread"} Comments
+
   .hr

@@ -5,7 +5,7 @@ require 'project'
 require 'coderay'   
 require 'rack/codehighlighter'
 
-use Rack::Codehighlighter, :coderay, :element => "pre", :pattern => /\A:::(\w+)\s*\n/
+use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => true
 
 before do
   response.headers['Cache-Control'] = 'public, max-age=28800'
