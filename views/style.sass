@@ -25,6 +25,9 @@ hr
 img
   :background #ddd
   :box-shadow 0 0 7px #888
+  :-moz-box-shadow 0 0 7px #888
+  :-webkit-box-shadow 0 0 7px #888
+  :behavior url(/PIE.htc)
 
 img.big
   :width 420px
@@ -57,7 +60,12 @@ img.big
   :background #fff
   :border #ccc 1px solid
   :border-radius 3px
+  :-webkit-border-radius 3px
+  :-moz-border-radius 3px
+  :-moz-box-shadow 0 0 5px #aaa
+  :-webkit-box-shadow 0 0 5px #aaa
   :box-shadow 0 0 5px #aaa
+  :behavior url(/PIE.htc)
 
 ul#menu
   li
@@ -69,12 +77,18 @@ ul#menu
       :top -40px
       :right 0px
       :display none
-      :border 1px #ccc solid
+      :border 1px #aaa solid
       :background #fff
       :padding 5px
+      :-webkit-border-radius 3px
+      :-moz-border-radius 3px
       :border-radius 3px
-      :color #999
+      :-moz-box-shadow 0 0 5px #aaa
+      :-webkit-box-shadow 0 0 5px #aaa
+      :box-shadow 0 0 5px #aaa
+      :color #ff4444
       :font-size 13px
+      :behavior url(/PIE.htc)
     &:hover
       .extra_info
         :display block
