@@ -9,7 +9,7 @@
 ----------------------------------------------------------------------------------------------------*/
 
 body {
-  font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+  font: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
 }
 
 pre,
@@ -28,11 +28,11 @@ hr {
 ----------------------------------------------------------------------------------------------------*/
 
 h1 {
-  font-size: 25px;
+  font-size: 26px;
 }
 
 h2 {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 h3 {
@@ -82,5 +82,5 @@ table,
 address,
 fieldset,
 figure {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }

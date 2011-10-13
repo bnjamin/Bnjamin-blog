@@ -12,7 +12,7 @@ before do
 end
 
 get '/about' do
-  @title = "Rails Freelancer med fokus på forretningsværdi"
+  @title = "Rails Freelancer in denmark"
   haml :about
 end
 

@@ -1,18 +1,22 @@
 .grid_12
-  %h2 My projects
+  .padding
+    %h1 My projects
 
 - @projects.each do |project|
   .grid_12
-    %h2= project.title
+    .padding
+      %h2= project.title
   .grid_6
-    %p= project.body
-    .techs_header Technologies used:
-    %ul.techs
-      - project.techs.each do |tech|
-        %li= tech
-    %a{:href=>project.url} You can visit the site here
+    .padding
+      %p= project.body
+      .techs_header Technologies used:
+      %ul.techs
+        - project.techs.each do |tech|
+          %li= tech
+      %a{:href=>project.url} You can visit the site here
   .grid_6
-    %img.big{:src=>project.image}
+    .padding
+      %img.big{:src=>project.image}
   .clear
   %hr
     
