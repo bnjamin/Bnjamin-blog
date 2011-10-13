@@ -2,10 +2,10 @@ require 'rubygems'
 require 'sinatra'
 require 'article'
 require 'project'
-#require 'coderay'   
-#require 'rack/codehighlighter'
+require 'coderay'   
+require 'rack/codehighlighter'
 
-#use Rack::Codehighlighter, :coderay, :element => "pre", :pattern => /\A:::(\w+)\s*\n/
+use Rack::Codehighlighter, :coderay, :element => "pre", :pattern => /\A:::(\w+)\s*\n/
 
 before do
   response.headers['Cache-Control'] = 'public, max-age=28800'
@@ -41,6 +41,6 @@ get '/projects' do
 end
 
 get '/stylesheets/style.css' do
-  header 'Content-Type' => 'text/css; charset=utf-8'
+  content_type 'text/css', :charset => 'utf-8'
   sass :style
 end

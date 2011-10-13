@@ -1,10 +1,10 @@
 -@articles.each do |article|
   .grid_12.article
-    %h1
+    %h1.article
       %a{:href => article.path}= article.title
     %span.date= article.date
     .content
-      =find_and_preserve article.body
+      = markdown article.body
     .more
       %a{:href => "/#{article.path}#disqus_thread"} Comments
   .hr

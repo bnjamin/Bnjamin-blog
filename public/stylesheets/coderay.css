@@ -7,27 +7,28 @@
   overflow: auto;
   font-size: 16px;
   margin: 12px 0;
+  border-radius: 3px;
 }
 .CodeRay pre {
   margin: 0px;
   padding: 0px;
 }
 
-.CodeRay .an { color:#E7BE69 }                      /* html attribute */
-.CodeRay .c  { color:#BC9358; font-style: italic; } /* comment */
-.CodeRay .ch { color:#509E4F }                      /* escaped character */
-.CodeRay .cl { color:#FFF }                         /* class */
-.CodeRay .co { color:#FFF }                         /* constant */
-.CodeRay .fl { color:#A4C260 }                      /* float */
-.CodeRay .fu { color:#FFC56D }                      /* function */
-.CodeRay .gv { color:#D0CFFE }                      /* global variable */
-.CodeRay .i  { color:#A4C260 }                      /* integer */
-.CodeRay .il { background:#151515 }                 /* inline code */
-.CodeRay .iv { color:#D0CFFE }                      /* instance variable */
-.CodeRay .pp { color:#E7BE69 }                      /* doctype */
-.CodeRay .r  { color:#CB7832 }                      /* keyword */
-.CodeRay .rx { color:#A4C260 }                      /* regex */
-.CodeRay .s  { color:#A4C260 }                      /* string */
-.CodeRay .sy { color:#6C9CBD }                      /* symbol */
-.CodeRay .ta { color:#E7BE69 }                      /* html tag */
+.CodeRay .anotation { color:#E7BE69 }                      /* html attribute */
+.CodeRay .comment  { color:#BC9358; font-style: italic; } /* comment */
+.CodeRay .char { color:#509E4F }                      /* escaped character */
+.CodeRay .class { color:#ff4444 }                         /* class */
+.CodeRay .constant { color:#ff4444 }                         /* constant */
+.CodeRay .float { color:#A4C260 }                      /* float */
+.CodeRay .function { color:#FFC56D }                      /* function */
+.CodeRay .global-variable { color:#D0CFFE }                      /* global variable */
+.CodeRay .integer  { color:#A4C260 }                      /* integer */
+.CodeRay .inline { background:#151515 }                 /* inline code */
+.CodeRay .instance-variable { color:#D0CFFE }                      /* instance variable */
+.CodeRay .doctype { color:#E7BE69 }                      /* doctype */
+.CodeRay .keyword  { color:#CB7832 }                      /* keyword */
+.CodeRay .regexp { color:#A4C260 }                      /* regex */
+.CodeRay .string  { color:#A4C260 }                      /* string */
+.CodeRay .symbol { color:#6C9CBD }                      /* symbol */
+.CodeRay .tag { color:#E7BE69 }                      /* html tag */
 .CodeRay .pc { color:#6C9CBD }                      /* boolean */

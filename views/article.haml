@@ -1,7 +1,7 @@
-.grid_12.post
+.grid_12.article
   %h1= @article.title
   %span.date= @article.date
-  .content= find_and_preserve @article.body
+  .content= markdown @article.body
   .comments
     #disqus_thread
       %script{:src => "http://disqus.com/forums/bnjamin/embed.js", :type => "text/javascript"} 

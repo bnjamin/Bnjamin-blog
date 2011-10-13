@@ -1,0 +1,38 @@
+--- 
+title: How i've reduced my procrastination with pomodoro, things and rescuetime
+date: 13/10/2011
+
+Sometimes i have a hard time with distraction, i've found the most efficient solution for me so far is the pomodoro technique. The workflow is very simple, I have a list with all the tasks for today, I simply choose one task:
+
+1. Work for 25 minutes on the task.
+2. Take a break for 5 minutes.
+3. Repeat.
+
+If I'm done with the task I pick a new one.
+
+## How I collect and organize my tasks
+
+I Use [Things](http://culturedcode.com/things/) to collect tasks. I have it installed on both my Mac and iPhone, so if I'm on the run I can still type it in.
+
+## How i start a pomodoro
+
+I use this nifty little app [pomodoro](http://itunes.apple.com/dk/app/pomodoro/id417574133?mt=12). When you start a pomodoro it can see all the tasks from today through things, but the best part is that you can script it. When it starts a pomodoro this little applescript is fired off:
+
+<pre>:::ruby
+tell application "RescueTime"
+  activate
+end tell
+
+tell application "System Events"
+  tell process "RescueTime"
+    click menu bar item "RescueTime" of menu bar 1
+    key code 125
+    key code 125
+    key code 36
+    key code 36
+  end tell
+end tell
+</pre>
+
+This activates [RescueTime](https://www.rescuetime.com/) which blocks distracting sites like news.ycombinator, reddit, facebook etc.
+
