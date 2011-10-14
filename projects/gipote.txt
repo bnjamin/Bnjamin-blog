@@ -1,0 +1,11 @@
+--- 
+title: gipote.dk
+image: "/images/gipote.jpg"
+techs:
+  - "Rails 3.0"
+  - "jQuery"
+url: "http://www.gipote.dk"
+
+A client project - A classifieds and networking site for dog owners. I helped transition the site from Rails 2 to 3. I also build some new functionality - letterbox, galleries, money accounts for the user. 
+
+

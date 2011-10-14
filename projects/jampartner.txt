@@ -7,4 +7,4 @@ techs:
   - "Amazon S3"
 url: "http://jampartner.dk"
 
-A page for musicians in denmark
+A personal project - A site where you can find fellow musicians. I created the site because I needed someone to play music with, and couldn't find a place online to search.

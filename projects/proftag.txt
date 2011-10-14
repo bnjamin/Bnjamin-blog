@@ -1,0 +1,13 @@
+--- 
+title: proftag.com
+image: "/images/proftag.jpg"
+techs:
+  - "Rails 3.0"
+  - "jQuery"
+url: "http://www.proftag.com"
+
+A client project - It's a webshop that sells dog tags. I helped customizing the shop to be able to sell custom tags. The customer can now preview the tag with text before he decides to buy. 
+
+
+
+

@@ -5,7 +5,8 @@ techs:
   - "Rails 3.0"
   - "Heroku" 
   - "Amazon S3"
+  - "jQuery"
 url: "http://flightlogger.net"
 
-An intranet for aviation schools
+A personal project - An intranet for aviation schools. It's used for tracking the students progress, billing, booking, state of the planes and a general overview of the schools activities.
 
