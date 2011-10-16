@@ -8,10 +8,12 @@
   font-size: 16px;
   margin: 12px 0;
   border-radius: 3px;
+  line-height: 18px;
 }
 .CodeRay pre {
   margin: 0px;
   padding: 0px;
+  
 }
 
 .CodeRay .anotation { color:#E7BE69 }                      /* html attribute */

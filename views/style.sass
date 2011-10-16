@@ -1,7 +1,7 @@
 body
   :background url("/images/bg.png")
-  :padding 50px 0 10px
-  :font 16px "Lucida Grande", Helvetica, Arial, sans-serif
+  :padding 50px 0
+  :font 16px Georgia, serif
   :color #333
 a
   :color #bb4444
@@ -11,6 +11,10 @@ a
 
 h1 a
   :color #003366
+
+h1 
+  :line-height 32px
+  :font-size 28px
 
 hr 
   :width 90%
@@ -23,14 +27,14 @@ hr
   :height 0
 
 img
-  :background #ddd
-  :box-shadow 0 0 7px #888
-  :-moz-box-shadow 0 0 7px #888
-  :-webkit-box-shadow 0 0 7px #888
+  :background #fff
+  :box-shadow 3px 3px 5px #ccc
   :behavior url(/PIE.htc)
+  :padding 4px
+  :border 1px #ccc solid
 
 img.big
-  :width 420px
+  :width 410px
 
 .image_source
   :color #aaa
@@ -60,6 +64,7 @@ img.big
   :background #fff
   :border #ccc 1px solid
   :border-radius 3px
+  :line-height 24px
   :-webkit-border-radius 3px
   :-moz-border-radius 3px
   :-moz-box-shadow 0 0 5px #aaa
@@ -94,7 +99,7 @@ ul#menu
         :display block
 
 #footer 
-  :margin-top 5px
+  :margin 5px 0 30px
   :text-align center
   :font-size 12px
   :color #888
