@@ -11,6 +11,13 @@ before do
   response.headers['Cache-Control'] = 'public, max-age=28800'
 end
 
+helpers do
+  def link_to(name, href)
+    link_class = request.path_info == href ? "class='active'" : ""
+    "<a href='#{href}' #{link_class}>#{name}</a>" 
+  end
+end
+
 get '/about' do
   @title = "Rails Freelancer in denmark"
   haml :about

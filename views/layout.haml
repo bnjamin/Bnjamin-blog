@@ -3,7 +3,6 @@
   %head
     %title=  @title + " - Benjamin Jørgensen"
     %link{:rel=>'stylesheet', :href=>'/stylesheets/reset.css'}
-    %link{:rel=>'stylesheet', :href=>'/stylesheets/960_12_col.css'}
     %link{:rel=>'stylesheet', :href=>'/stylesheets/text.css'}
     %link{:rel=>'stylesheet', :href=>'/stylesheets/coderay.css'}
     %link{:rel=>'stylesheet', :href=>'/stylesheets/style.css'}
@@ -18,23 +17,23 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
   %body
-    .container_12#top
-      #logo.grid_6 
+    .container#top
+      #logo
         %a{:href=>'/'} Benjamin Jørgensen
-      %ul.grid_6#menu
+      %ul#menu
         %li
           .extra_info Go ahead, I don't bite :)
-          %a{:href=>'/contact'} Contact me
+          = link_to "Contact me", "/contact"
         %li
           .extra_info Personal info and testimonials
-          %a{:href=>'/about'} About
+          = link_to "About", "/about"
         %li
           .extra_info See some of my projects
-          %a{:href=>'/projects'} Projects
+          = link_to "Projects", "/projects"
         %li
           .extra_info Read my musings
-          %a{:href=>'/'} Blog
+          = link_to "Blog", "/"
 
-    .container_12#content= yield
-    .container_12
-      .grid_12#footer &copy; 2011 Benjamin Jørgensen
+    .container#content= yield
+    .container
+      #footer &copy; 2011 Benjamin Jørgensen

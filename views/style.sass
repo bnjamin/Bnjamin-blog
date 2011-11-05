@@ -1,8 +1,8 @@
 body
-  :background url("/images/bg.png")
-  :padding 50px 0
+  :background #F7F7EF
   :font 16px Georgia, serif
   :color #5E5E5E
+
 a
   :color #bb4444
   :text-decoration none
@@ -20,14 +20,15 @@ p
   :padding 0px 0 15px
 
 hr 
-  :width 90%
   :margin 25px auto
   :clear both
-  :border solid
-  :border-width 0px
-  :border-top 1px #fefefe solid
-  :border-bottom 1px #eee solid
+  :border-top 2px #DDDED8 dashed
   :height 0
+
+.image_wrapper
+  :display inline
+  :float right
+  :padding 0 0 10px 10px
 
 img
   :background #fff
@@ -37,7 +38,7 @@ img
   :border 1px #ccc solid
 
 img.big
-  :width 410px
+  :width 350px
 
 .image_source
   :color #aaa
@@ -54,26 +55,29 @@ img.big
   :color white
   :text-shadow none
 
+.container
+  :width 750px
+  :margin auto
+
 #top
+  :padding 50px 0 25px
   :position relative
 
 #logo
-  :font-size 30px
-  :margin-top -10px
+  :position absolute
+  :bottom 10px
+  :left 0px
+  a
+    :font-size 30px
+    :color #003366
 
 #content
-  :padding-top 20px
-  :padding-bottom 35px
-  :background #fff
-  :border #ccc 1px solid
-  :border-radius 3px
+  :padding 20px 0
   :line-height 24px
-  :-webkit-border-radius 3px
-  :-moz-border-radius 3px
-  :-moz-box-shadow 0 0 2px #ccc
-  :-webkit-box-shadow 0 0 2px #ccc
-  :box-shadow 0 0 2px #ccc
-  :behavior url(/PIE.htc)
+  :border-top 2px dashed #19ABB3
+
+.content
+  :margin-top 10px
 
 ul#menu
   li
@@ -82,7 +86,7 @@ ul#menu
     :font-size 20px
     .extra_info
       :position absolute
-      :top -40px
+      :top 10px
       :right 0px
       :display none
       :border 1px #aaa solid
@@ -97,12 +101,19 @@ ul#menu
       :color #999
       :font-size 13px
       :behavior url(/PIE.htc)
+    a
+      :display block
+      :padding 5px 10px
+      &:hover
+        :background #EDEEE8
+    a.active
+      :background #EDEEE8
     &:hover
       .extra_info
         :display block
 
 #footer 
-  :margin 5px 0 30px
+  :padding-bottom 30px
   :text-align center
   :font-size 12px
   :color #888
@@ -117,12 +128,9 @@ ul.techs
 span.date
   :color #aaa
 
-.padding
-  :padding 15px 15px 0
-
 blockquote
   :border-left 3px #ccc solid
-  :background #F7F7EF
+  :background #EDEEE8
   :font-style italic
   :padding 20px
   :margin-bottom 20px

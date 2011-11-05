@@ -1,20 +1,11 @@
-.grid_8.suffix_4
-  .padding
-    %h1.article
-      %a{:href=>"/#{@article.path}"}= @article.title
-.grid_8.article
-  .padding
-    .content= find_and_preserve(markdown(@article.body))
-    .comments
-      #disqus_thread
-        %script{:src => "http://disqus.com/forums/bnjamin/embed.js", :type => "text/javascript"}
-.grid_4
-  .padding
-    %span.date
-      This article was puplished on
-      %br
-      =@article.date
-    %br
-    %br
-    = erb :tweet
-    = erb :google
+%h1.article
+  %a{:href=>"/#{@article.path}"}= @article.title
+%span.date
+  =@article.date
+.content= find_and_preserve(markdown(@article.body))
+= erb :tweet
+= erb :google
+.comments
+  #disqus_thread
+    %script{:src => "http://disqus.com/forums/bnjamin/embed.js", :type => "text/javascript"}
+

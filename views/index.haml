@@ -1,20 +1,9 @@
 -@articles.each do |article|
-  .grid_8.suffix_4
-    .padding
-      %h1.article
-        %a{:href=>"/#{article.path}"}= article.title
-  .grid_8.article
-    .padding
-      .content= find_and_preserve(markdown(article.body))
-      .more
-        %a{:href => "/#{article.path}#disqus_thread"} Comments
-  .grid_4
-    .padding
-      %span.date
-        This article was puplished on
-        %br
-        =article.date
-      .more
-        %a{:href => "/#{article.path}#disqus_thread"} Comments
-
+  %h1.article
+    %a{:href=>"/#{article.path}"}= article.title
+  %span.date
+    =article.date
+  .content= find_and_preserve(markdown(article.body))
+  .more
+    %a{:href => "/#{article.path}#disqus_thread"} Comments  
   .hr
